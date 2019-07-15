@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13419C17-A7BB-4C10-87F7-85FEF80CDBF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KafeOtomasyon.cs</RootNamespace>
+    <AssemblyName>KafeOtomasyon.cs</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access.cs" />
+    <Compile Include="Garsonlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Garsonlar.Designer.cs">
+      <DependentUpon>Garsonlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GarsonlarClass.cs" />
+    <Compile Include="HazırSiparisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HazırSiparisler.Designer.cs">
+      <DependentUpon>HazırSiparisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klavye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klavye.Designer.cs">
+      <DependentUpon>Klavye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciClass.cs" />
+    <Compile Include="KullaniciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGiris.Designer.cs">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasaTasimaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasaTasimaForm.Designer.cs">
+      <DependentUpon>MasaTasimaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AyarlarClass.cs" />
+    <Compile Include="Models\Yukleme.cs" />
+    <Compile Include="MutfakClass.cs" />
+    <Compile Include="MutfakForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MutfakForm.Designer.cs">
+      <DependentUpon>MutfakForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odeme.Designer.cs">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdemeClass.cs" />
+    <Compile Include="Salonlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salonlar.Designer.cs">
+      <DependentUpon>Salonlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalonlarClass.cs" />
+    <Compile Include="Ayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayarlar.Designer.cs">
+      <DependentUpon>Ayarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifreKoy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreKoy.Designer.cs">
+      <DependentUpon>SifreKoy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiparisClass.cs" />
+    <Compile Include="UrunSınıf.cs" />
+    <EmbeddedResource Include="Garsonlar.resx">
+      <DependentUpon>Garsonlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HazırSiparisler.resx">
+      <DependentUpon>HazırSiparisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Klavye.resx">
+      <DependentUpon>Klavye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGiris.resx">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasaTasimaForm.resx">
+      <DependentUpon>MasaTasimaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MutfakForm.resx">
+      <DependentUpon>MutfakForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odeme.resx">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salonlar.resx">
+      <DependentUpon>Salonlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Ayarlar.resx">
+      <DependentUpon>Ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifreKoy.resx">
+      <DependentUpon>SifreKoy.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_undo_back_1891408.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
